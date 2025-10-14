@@ -1,0 +1,19 @@
+BODY
+ {background-image: url("Tree.webp");
+background-size: cover;}
+
+h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
+
+.high1 {background: rgb(3, 7, 95)}
+
+#Navi {width: 300px;}
+
+#bird {width: 600px;}
+
+#pics {
+    display: flex;
+    flex-direction: row;}
+#split {display: flex;
+    flex-direction: row-reverse;}
+
+
