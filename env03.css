@@ -22,3 +22,10 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     flex-direction: column;
 
 }
+
+#slug-button {
+    height: 50px;
+    display: flex; 
+    flex-direction: column;
+
+}

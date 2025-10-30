@@ -17,4 +17,17 @@ megaSentence = megaSentence + "<p>The animals characteristics: type - " + myTran
 
 $("#output").html(megaSentence);
 
+function askNumber(whatNumber) {
+let userNumber = prompt("What are the chances you think we are gunna die on a scale of 1-10?");
+if (userNumber == whatNumber) {
+    $("#output").html("Yayy its Sammy!"+ "<img width=100px src='images/slug.png'>");
+}
+else {
+    $("#output").html("Oh crap we are so dead");
+}
+}
+$("#slug-button").click(function () {
+    askNumber(2);
 
+
+});
