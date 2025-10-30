@@ -27,5 +27,6 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     height: 50px;
     display: flex; 
     flex-direction: column;
+    background: pink ;
 
 }
