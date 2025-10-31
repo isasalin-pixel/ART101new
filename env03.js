@@ -23,11 +23,30 @@ if (userNumber == whatNumber) {
     $("#output").html("Yayy its Sammy!"+ "<img width=100px src='images/slug.png'>");
 }
 else {
-    $("#output").html("Oh crap we are so dead");
+    $("#output").html("Oh crap we are so dead!!!");
 }
 }
 $("#slug-button").click(function () {
     askNumber(2);
 
 
+});
+
+
+function makeImage(imageName) {
+  // Don't clear the container — just keep adding images
+  $("#image-container").append(
+    `<img width="150px" src="images/darth.png">`
+  );
+}
+
+function changeBackground(newColor) {
+  $("body").css("background-color", newColor);
+}
+
+// When a Darth button is clicked
+$(".darth-button").click(function () {
+  const colorClicked = this.id; // e.g. "red"
+  changeBackground(colorClicked); // change background color
+  makeImage(colorClicked); // add another Darth image
 });

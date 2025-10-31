@@ -16,10 +16,13 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
 #split {display: flex;
     flex-direction: row-reverse;}
 
-#output {color: black;  
+#output {
+    color: black;  
     height: 100px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 100px;
 
 }
 
@@ -28,5 +31,23 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     display: flex; 
     flex-direction: column;
     background: pink ;
+    position: relative;
+    top: 300px;
+    left: 250px;
 
+}
+
+#red {
+    height: 100px;
+    width: 100px;
+    background:rgb(67, 73, 194);
+    position: relative;
+    top: 50px;
+    left: 900px;
+}
+#image-container {
+    height: 100px;
+    position: relative;
+    top: 5px;
+    left: 800px;
 }
