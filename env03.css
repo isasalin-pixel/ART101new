@@ -42,12 +42,20 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     width: 100px;
     background:rgb(67, 73, 194);
     position: relative;
-    top: 50px;
-    left: 900px;
+    left: 600px;
 }
 #image-container {
     height: 50px;
     position: relative;
     top: 5px;
     left: 800px;
+}
+
+#erase-button {
+    height: 50px;
+    background: lightseagreen;
+    position: relative;
+    top: 400px;
+    left: 200px;
+
 }

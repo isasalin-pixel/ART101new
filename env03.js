@@ -50,3 +50,15 @@ $(".darth-button").click(function () {
   changeBackground(colorClicked); // change background color
   makeImage(colorClicked); // add another Darth image
 });
+
+$(".darth-button").hover(function(){
+  $(this).css("background-color", "red");
+  }, function(){
+  $(this).css("background-color", "pink");
+});
+
+$("#erase-button").click(function() {
+  $("#image-container img[src='images/darth.png']").remove();
+});
+
+
