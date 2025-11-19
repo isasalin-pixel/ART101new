@@ -61,4 +61,10 @@ $("#erase-button").click(function() {
   $("#image-container img[src='images/darth.png']").remove();
 });
 
-
+$(document).mousemove(function(event) {
+  $("#apple").css({
+    left: event.pageX - 60,
+    top: event.pageY - 60,
+    position: "absolute"
+  });
+});

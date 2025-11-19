@@ -59,3 +59,8 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     left: 200px;
 
 }
+
+#apple {
+    height: 70px;
+    position: relative;
+}
