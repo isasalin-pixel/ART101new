@@ -42,14 +42,20 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
     width: 100px;
     background:rgb(67, 73, 194);
     position: relative;
-    left: 600px;
+    left: 400px;
 }
+
 #image-container {
-    height: 50px;
     position: relative;
+    height: 50px;
     top: 5px;
     left: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
 
 #erase-button {
     height: 50px;
@@ -63,4 +69,8 @@ h1, h4 {color: rgb(242, 191, 159); font-family: Impact, }
 #apple {
     height: 70px;
     position: relative;
+    pointer-events: none;
 }
+
+
+

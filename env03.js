@@ -12,31 +12,34 @@ let myTransport = {
 
 let megaSentence ;
 
-megaSentence = "<p>Big ole bird loves to soar the skies with: " + myCharacters[1] +", " + myCharacters[0] + "</p>";
-megaSentence = megaSentence + "<p>The animals characteristics: type - " + myTransport.type + ", height " + myTransport.height + ", can carry up to " + myTransport.carry + ", riders: " + myTransport.riders[2] + "</p>";
+megaSentence = `
+  <p>Big ole bird loves to soar the skies with: ${myCharacters[1]}, ${myCharacters[0]}</p>
+  <p>The animal's characteristics: type - ${myTransport.type}, height ${myTransport.height}, can carry up to ${myTransport.carry}, riders: ${myTransport.riders[2]}</p>
+`;
 
 $("#output").html(megaSentence);
 
-function askNumber(whatNumber) {
-let userNumber = prompt("What are the chances you think we are gunna die on a scale of 1-10?");
-if (userNumber == whatNumber) {
-    $("#output").html("Yayy its Sammy!"+ "<img width=100px src='images/slug.png'>");
-}
-else {
+// Guessing game
+function askNumber(correctNumber) {
+  const userNumber = prompt("What are the chances you think we are gunna die on a scale of 1-10?");
+
+  if (Number(userNumber) === correctNumber) {
+    $("#output").html(
+      "Yayy it's Sammy! <img width='100px' src='environ/images/slug.png'>"
+    );
+  } else {
     $("#output").html("Oh crap we are so dead!!!");
+  }
 }
-}
-$("#slug-button").click(function () {
-    askNumber(2);
 
-
-});
+// Sammy guessing button
+$("#slug-button").click(() => askNumber(2));
 
 
 function makeImage(imageName) {
   // Don't clear the container — just keep adding images
   $("#image-container").append(
-    `<img width="150px" src="images/darth.png">`
+    `<img width="150px" src="environ/images/darth.png">`
   );
 }
 
@@ -51,6 +54,7 @@ $(".darth-button").click(function () {
   makeImage(colorClicked); // add another Darth image
 });
 
+
 $(".darth-button").hover(function(){
   $(this).css("background-color", "red");
   }, function(){
@@ -58,7 +62,7 @@ $(".darth-button").hover(function(){
 });
 
 $("#erase-button").click(function() {
-  $("#image-container img[src='images/darth.png']").remove();
+  $("#image-container img[src='environ/images/darth.png']").remove();
 });
 
 $(document).mousemove(function(event) {
